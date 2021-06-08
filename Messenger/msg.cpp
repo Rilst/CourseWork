@@ -2,7 +2,7 @@
 
 Msg::Msg(QObject *parent) : QObject(parent), socket(new QTcpSocket(this))
 {
-     socket->connectToHost("192.168.1.105", 8080); //Server ip and port
+     socket->connectToHost("192.168.1.102", 8080); //Server ip and port
      connect(socket, &QTcpSocket::readyRead, this, &Msg::slotReadyRead);
      connect(socket, SIGNAL(stateChanged(QAbstractSocket::SocketState)),
      this, SLOT(StatusChanged(QAbstractSocket::SocketState)));

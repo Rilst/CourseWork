@@ -51,7 +51,7 @@
     <widget class="QTextBrowser" name="MessageBrowser"/>
    </item>
    <item row="1" column="0">
-    <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,0,1">
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,2,0">
      <item>
       <widget class="QPushButton" name="InputFileButtn">
        <property name="sizePolicy">

@@ -90,7 +90,9 @@ void messagesystem::on_InputFileButtn_clicked()
 
 void messagesystem::on_SendButtn_clicked()
 {
-   ui->MessageBrowser->append(QString("<br><font color=\"blue\">You: </font>") + ui->MessageEdit->toPlainText() + "<\br>");
-   emit sendmsg(ui->MessageEdit->toPlainText());
-   ui->MessageEdit->clear();
+   if (ui->MessageEdit->toPlainText().size() > 0){
+       ui->MessageBrowser->append(QString("<br><font color=\"blue\">You: </font>") + ui->MessageEdit->toPlainText() + "<\br>");
+       emit sendmsg(ui->MessageEdit->toPlainText());
+       ui->MessageEdit->clear();
+   }
 }

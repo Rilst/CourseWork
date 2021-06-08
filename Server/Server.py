@@ -252,7 +252,7 @@ def Connection(connUser, usersLogins, usersConnect, usersInChat, packets, connBD
     
 connectionBD = pymysql.connect(host='localhost',
                                user='root',
-                               password='',                             
+                               password='jUsdf2331',                             
                                db='messenger_database',
                                charset='utf8mb4',
                                cursorclass=pymysql.cursors.DictCursor)
@@ -265,7 +265,7 @@ usersLogins = {}
 usersConnect = {}
 usersInChat = {}
 
-host = '192.168.1.105'
+host = '192.168.1.102'
 port = 8080
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
